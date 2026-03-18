@@ -1,0 +1,222 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gideon Kipruto Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a192f;
+            color: white;
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 30px;
+            background: #112240;
+            position: sticky;
+            top: 0;
+        }
+
+        nav h2 {
+            color: #64ffda;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #64ffda;
+        }
+
+        /* HEADER / HERO */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #64ffda;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #64ffda;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: #112240;
+            padding: 20px;
+            margin: 15px auto;
+            max-width: 500px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
+
+        /* PROJECTS */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project-card {
+            background: #112240;
+            padding: 20px;
+            margin: 15px;
+            width: 250px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
+
+        /* CONTACT BUTTON */
+        .btn-whatsapp {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1ebe5d;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #112240;
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            header {
+                text-align: left;
+                padding: 80px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2>GK</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER / HERO -->
+    <header>
+        <h1>Gideon Kipruto</h1>
+        <p>Web Developer | Tech Enthusiast</p>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>
+                I am passionate about web development and technology. I build clean, responsive websites and I am constantly improving my skills in HTML, CSS, and JavaScript.
+            </p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="card">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript (Intermidiate)</p>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>A personal website to showcase my skills.</p>
+            </div>
+            <div class="project-card">
+                <h3>Coming Soon</h3>
+                <p>More projects will be added here.</p>
+            </div>
+            <div class="project-card">
+                <h3>Coming Soon</h3>
+                <p>Stay tuned for more work.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="card">
+            <p>Email: gideonkipruto34@gmail.com</p>
+            <p>Phone: 0743069874</p>
+            <a href="https://wa.me/254743069874" class="btn-whatsapp" target="_blank">WhatsApp Me</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Gideon Kipruto</p>
+    </footer>
+
+</body>
+</html>
